@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Weekly - 每周5分钟看懂AI圈</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap');
+    body { font-family: 'Noto Sans SC', system-ui, sans-serif; }
+    .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+    .card-hover { transition: transform 0.2s, box-shadow 0.2s; }
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 16px 32px -8px rgba(0,0,0,0.2); }
+    .lang-zh { display: block; }
+    .lang-en { display: none; }
+    html[lang="en"] .lang-zh { display: none; }
+    html[lang="en"] .lang-en { display: block; }
+    html[lang="en"] body { font-family: system-ui, -apple-system, sans-serif; }
+    html[lang="en"] #btn-en { background: rgba(255,255,255,0.2); }
+    html[lang="en"] #btn-zh { background: rgba(255,255,255,0.1); }
+  </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+  <header class="gradient-bg text-white py-16">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <div class="flex justify-center gap-2 mb-4">
+        <button id="btn-zh" class="px-4 py-2 bg-white/20 rounded-lg hover:bg-white/30 transition">中文</button>
+        <button id="btn-en" class="px-4 py-2 bg-white/10 rounded-lg hover:bg-white/20 transition">English</button>
+      </div>
+      <h1 class="text-5xl font-bold mb-4">AI Weekly</h1>
+      <p class="text-xl text-white/90">
+        <span class="lang-zh">每周5分钟，看懂AI圈发生了什么</span>
+        <span class="lang-en">What happened in AI this week, explained in 5 minutes</span>
+      </p>
+      <p class="mt-4 text-white/70">
+        <span class="lang-zh">口语化解读 · 实用至上 · 有趣有料</span>
+        <span class="lang-en">Plain language · Practical · Fun</span>
+      </p>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-12">
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+        📰 <span class="lang-zh">最新一期</span><span class="lang-en">Latest Issue</span>
+      </h2>
+      <a href="2026-W07.html" class="block bg-white rounded-2xl p-8 shadow-lg card-hover border-2 border-purple-100">
+        <div class="flex items-start justify-between">
+          <div>
+            <span class="inline-block px-3 py-1 bg-purple-100 text-purple-700 text-sm font-medium rounded-full mb-3">
+              2026 <span class="lang-zh">第07周</span><span class="lang-en">Week 07</span>
+            </span>
+            <h3 class="text-2xl font-bold text-gray-800 mb-2">
+              <span class="lang-zh">OpenClaw爆火、语音AI翻车、ICLR论文公布</span>
+              <span class="lang-en">OpenClaw Viral, Voice AI Fails, ICLR Papers</span>
+            </h3>
+            <p class="text-gray-600">
+              <span class="lang-zh">Feb 9-15, 2026 · 本周AI圈最火的2件事、4个热议话题、5个实用工具、3个趋势预测</span>
+              <span class="lang-en">Feb 9-15, 2026 · 2 hot stories, 4 discussions, 5 tools, 3 predictions</span>
+            </p>
+          </div>
+          <div class="text-4xl">🔥</div>
+        </div>
+      </a>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+        📚 <span class="lang-zh">往期周报</span><span class="lang-en">Archive</span>
+      </h2>
+      <div class="text-center py-12 text-gray-400">
+        <p><span class="lang-zh">更多周报即将推出...</span><span class="lang-en">More issues coming soon...</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center text-gray-400 text-sm py-8 border-t border-gray-200">
+    <p><span class="lang-zh">AI Weekly · 每周5分钟，看懂AI圈</span><span class="lang-en">AI Weekly · 5 minutes to understand AI every week</span></p>
+    <p class="mt-2">
+      <a href="https://github.com/doc2page/ai-weekly" class="text-purple-600 hover:underline">GitHub</a>
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById('btn-zh').addEventListener('click', () => {
+      document.documentElement.setAttribute('lang', 'zh-CN');
+      document.getElementById('btn-zh').classList.add('bg-white/20');
+      document.getElementById('btn-zh').classList.remove('bg-white/10');
+      document.getElementById('btn-en').classList.add('bg-white/10');
+      document.getElementById('btn-en').classList.remove('bg-white/20');
+    });
+    document.getElementById('btn-en').addEventListener('click', () => {
+      document.documentElement.setAttribute('lang', 'en');
+      document.getElementById('btn-en').classList.add('bg-white/20');
+      document.getElementById('btn-en').classList.remove('bg-white/10');
+      document.getElementById('btn-zh').classList.add('bg-white/10');
+      document.getElementById('btn-zh').classList.remove('bg-white/20');
+    });
+  </script>
+</body>
+</html>
