@@ -20,11 +20,16 @@
     .back-to-top { position: fixed; bottom: 5rem; right: 1.5rem; width: 3rem; height: 3rem; border-radius: 50%; background: #667eea; color: white; display: flex; align-items: center; justify-content: center; cursor: pointer; opacity: 0; transition: opacity 0.3s, transform 0.2s; box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4); z-index: 50; }
     .back-to-top.visible { opacity: 1; }
     .back-to-top:hover { background: #5a67d8; transform: scale(1.1); }
-    /* 语言切换 */
+    /* 语言切换 - block版本 */
     .lang-zh { display: block; }
     .lang-en { display: none; }
     html[lang="en"] .lang-zh { display: none; }
     html[lang="en"] .lang-en { display: block; }
+    /* 语言切换 - inline版本 */
+    .lang-zh-i { display: inline; }
+    .lang-en-i { display: none; }
+    html[lang="en"] .lang-zh-i { display: none; }
+    html[lang="en"] .lang-en-i { display: inline; }
     html[lang="en"] #btn-en { background: rgba(255,255,255,0.2); }
     html[lang="en"] #btn-zh { background: rgba(255,255,255,0.1); }
     /* 防止文字溢出 */
@@ -221,13 +226,13 @@
               <p>ICLR 2026 accepted papers released. Meta's Gaia2 and Alibaba's P-GenRM received Oral presentations. AI Agents moving from labs to real scenarios.</p>
             </div>
             <div class="bg-gray-50 rounded-lg p-3 mb-3">
-              <div class="text-xs md:text-sm mb-2"><span class="text-green-600 font-medium">👍</span> <span class="lang-zh">AI Agent终于能干实事了</span><span class="lang-en">AI Agents can finally do real work</span></div>
-              <div class="text-xs md:text-sm"><span class="text-red-600 font-medium">👎</span> <span class="lang-zh">评估标准和真实应用差距还是太大</span><span class="lang-en">Gap between evaluation and real use is still huge</span></div>
+              <div class="text-xs md:text-sm mb-2"><span class="text-green-600 font-medium">👍</span> <span class="lang-zh-i">AI Agent终于能干实事了</span><span class="lang-en-i">AI Agents can finally do real work</span></div>
+              <div class="text-xs md:text-sm"><span class="text-red-600 font-medium">👎</span> <span class="lang-zh-i">评估标准和真实应用差距还是太大</span><span class="lang-en-i">Gap between evaluation and real use is still huge</span></div>
             </div>
             <div class="text-xs md:text-sm text-gray-700 mb-2">
               <span class="font-medium">🔍</span>
-              <span class="lang-zh">GPT-5在动态环境里只有42%的成功率，离"可用"还有距离。</span>
-              <span class="lang-en">GPT-5 only achieves 42% success in dynamic environments.</span>
+              <span class="lang-zh-i">GPT-5在动态环境里只有42%的成功率，离"可用"还有距离。</span>
+              <span class="lang-en-i">GPT-5 only achieves 42% success in dynamic environments.</span>
             </div>
             <div class="text-xs text-gray-400">⭐⭐⭐⭐</div>
           </article>
@@ -248,13 +253,13 @@
               <p>MIT tested GPT-4o's "theory of mind." Conclusion: performs well on some tasks but fails on logically equivalent ones.</p>
             </div>
             <div class="bg-gray-50 rounded-lg p-3 mb-3">
-              <div class="text-xs md:text-sm mb-2"><span class="text-green-600 font-medium">👍</span> <span class="lang-zh">AI不需要像人一样思考，能解决问题就行</span><span class="lang-en">AI doesn't need to think like humans</span></div>
-              <div class="text-xs md:text-sm"><span class="text-red-600 font-medium">👎</span> <span class="lang-zh">如果AI不理解上下文，关键时刻会翻车</span><span class="lang-en">Without context understanding, it will fail at critical moments</span></div>
+              <div class="text-xs md:text-sm mb-2"><span class="text-green-600 font-medium">👍</span> <span class="lang-zh-i">AI不需要像人一样思考，能解决问题就行</span><span class="lang-en-i">AI doesn't need to think like humans</span></div>
+              <div class="text-xs md:text-sm"><span class="text-red-600 font-medium">👎</span> <span class="lang-zh-i">如果AI不理解上下文，关键时刻会翻车</span><span class="lang-en-i">Without context understanding, it will fail at critical moments</span></div>
             </div>
             <div class="text-xs md:text-sm text-gray-700 mb-2">
               <span class="font-medium">🔍</span>
-              <span class="lang-zh">用户关心的是AI能不能帮上忙，而不是它是否"真的理解"。</span>
-              <span class="lang-en">Users care if AI is helpful, not whether it "truly understands."</span>
+              <span class="lang-zh-i">用户关心的是AI能不能帮上忙，而不是它是否"真的理解"。</span>
+              <span class="lang-en-i">Users care if AI is helpful, not whether it "truly understands."</span>
             </div>
             <div class="text-xs text-gray-400">⭐⭐⭐</div>
           </article>
@@ -275,13 +280,13 @@
               <p>Tsinghua's MiniCPM team released SALA, supporting 1M token context. 3.5x faster than full-attention models at 256K tokens on a single A6000.</p>
             </div>
             <div class="bg-gray-50 rounded-lg p-3 mb-3">
-              <div class="text-xs md:text-sm mb-2"><span class="text-green-600 font-medium">👍</span> <span class="lang-zh">长文本问题终于被解决了</span><span class="lang-en">Long-context problem solved</span></div>
-              <div class="text-xs md:text-sm"><span class="text-red-600 font-medium">👎</span> <span class="lang-zh">100万token实际用得上的场景有限</span><span class="lang-en">1M token use cases are limited</span></div>
+              <div class="text-xs md:text-sm mb-2"><span class="text-green-600 font-medium">👍</span> <span class="lang-zh-i">长文本问题终于被解决了</span><span class="lang-en-i">Long-context problem solved</span></div>
+              <div class="text-xs md:text-sm"><span class="text-red-600 font-medium">👎</span> <span class="lang-zh-i">100万token实际用得上的场景有限</span><span class="lang-en-i">1M token use cases are limited</span></div>
             </div>
             <div class="text-xs md:text-sm text-gray-700 mb-2">
               <span class="font-medium">🔍</span>
-              <span class="lang-zh">对于处理长文档的人（律师、研究员、学生）是好消息。</span>
-              <span class="lang-en">Good news for anyone dealing with long documents.</span>
+              <span class="lang-zh-i">对于处理长文档的人（律师、研究员、学生）是好消息。</span>
+              <span class="lang-en-i">Good news for anyone dealing with long documents.</span>
             </div>
             <div class="text-xs text-gray-400">⭐⭐⭐⭐</div>
           </article>
@@ -302,13 +307,13 @@
               <p>Multiple publishers started limiting Internet Archive access, worried AI companies will use Archive data to train models.</p>
             </div>
             <div class="bg-gray-50 rounded-lg p-3 mb-3">
-              <div class="text-xs md:text-sm mb-2"><span class="text-green-600 font-medium">👍</span> <span class="lang-zh">出版商有权保护自己的内容</span><span class="lang-en">Publishers have the right to protect content</span></div>
-              <div class="text-xs md:text-sm"><span class="text-red-600 font-medium">👎</span> <span class="lang-zh">Archive是人类知识遗产，不该成为AI版权战的牺牲品</span><span class="lang-en">Archive is humanity's knowledge heritage</span></div>
+              <div class="text-xs md:text-sm mb-2"><span class="text-green-600 font-medium">👍</span> <span class="lang-zh-i">出版商有权保护自己的内容</span><span class="lang-en-i">Publishers have the right to protect content</span></div>
+              <div class="text-xs md:text-sm"><span class="text-red-600 font-medium">👎</span> <span class="lang-zh-i">Archive是人类知识遗产，不该成为AI版权战的牺牲品</span><span class="lang-en-i">Archive is humanity's knowledge heritage</span></div>
             </div>
             <div class="text-xs md:text-sm text-gray-700 mb-2">
               <span class="font-medium">🔍</span>
-              <span class="lang-zh">讽刺的是，AI公司可能直接跟出版商签了协议。Archive成了替罪羊。</span>
-              <span class="lang-en">Ironically, AI companies probably signed deals with publishers. Archive became a scapegoat.</span>
+              <span class="lang-zh-i">讽刺的是，AI公司可能直接跟出版商签了协议。Archive成了替罪羊。</span>
+              <span class="lang-en-i">Ironically, AI companies probably signed deals with publishers. Archive became a scapegoat.</span>
             </div>
             <div class="text-xs text-gray-400">⭐⭐⭐⭐⭐ (443 upvotes)</div>
           </article>
@@ -326,12 +331,12 @@
             <div class="flex items-start justify-between mb-2">
               <h3 class="font-bold text-gray-800 text-sm md:text-base">izan.io</h3>
               <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">
-                <span class="lang-zh">免费</span><span class="lang-en">Free</span>
+                <span class="lang-zh-i">免费</span><span class="lang-en-i">Free</span>
               </span>
             </div>
             <p class="text-xs md:text-sm text-purple-600 mb-3">
-              <span class="lang-zh">开箱即用的本地AI助手</span>
-              <span class="lang-en">Ready-to-Use Local AI Assistant</span>
+              <span class="lang-zh-i">开箱即用的本地AI助手</span>
+              <span class="lang-en-i">Ready-to-Use Local AI Assistant</span>
             </p>
             <div class="lang-zh space-y-2 text-xs md:text-sm text-gray-600">
               <p><span class="font-medium text-gray-700">能干嘛：</span>把17+AI模型整合到一个网页里</p>
@@ -342,7 +347,7 @@
               <p><span class="font-medium text-gray-700">How:</span>Visit izan.io, add API key</p>
             </div>
             <div class="mt-3 pt-3 border-t border-gray-100">
-              <p class="text-xs text-gray-400">⚠️ <span class="lang-zh">AGPL许可</span><span class="lang-en">AGPL license</span></p>
+              <p class="text-xs text-gray-400">⚠️ <span class="lang-zh-i">AGPL许可</span><span class="lang-en-i">AGPL license</span></p>
             </div>
           </article>
 
@@ -350,12 +355,12 @@
             <div class="flex items-start justify-between mb-2">
               <h3 class="font-bold text-gray-800 text-sm md:text-base">Secure OpenClaw</h3>
               <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">
-                <span class="lang-zh">免费</span><span class="lang-en">Free</span>
+                <span class="lang-zh-i">免费</span><span class="lang-en-i">Free</span>
               </span>
             </div>
             <p class="text-xs md:text-sm text-purple-600 mb-3">
-              <span class="lang-zh">在聊天软件里用Claude</span>
-              <span class="lang-en">Use Claude in Chat Apps</span>
+              <span class="lang-zh-i">在聊天软件里用Claude</span>
+              <span class="lang-en-i">Use Claude in Chat Apps</span>
             </p>
             <div class="lang-zh space-y-2 text-xs md:text-sm text-gray-600">
               <p><span class="font-medium text-gray-700">能干嘛：</span>在WhatsApp、Telegram里直接用Claude</p>
@@ -366,7 +371,7 @@
               <p><span class="font-medium text-gray-700">How:</span>Clone repo → configure → start</p>
             </div>
             <div class="mt-3 pt-3 border-t border-gray-100">
-              <p class="text-xs text-gray-400">⚠️ <span class="lang-zh">需要命令行知识</span><span class="lang-en">Requires CLI knowledge</span></p>
+              <p class="text-xs text-gray-400">⚠️ <span class="lang-zh-i">需要命令行知识</span><span class="lang-en-i">Requires CLI knowledge</span></p>
             </div>
           </article>
 
@@ -374,12 +379,12 @@
             <div class="flex items-start justify-between mb-2">
               <h3 class="font-bold text-gray-800 text-sm md:text-base">VisionClaw</h3>
               <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">
-                <span class="lang-zh">免费</span><span class="lang-en">Free</span>
+                <span class="lang-zh-i">免费</span><span class="lang-en-i">Free</span>
               </span>
             </div>
             <p class="text-xs md:text-sm text-purple-600 mb-3">
-              <span class="lang-zh">Meta眼镜的AI助手</span>
-              <span class="lang-en">AI Assistant for Meta Glasses</span>
+              <span class="lang-zh-i">Meta眼镜的AI助手</span>
+              <span class="lang-en-i">AI Assistant for Meta Glasses</span>
             </p>
             <div class="lang-zh space-y-2 text-xs md:text-sm text-gray-600">
               <p><span class="font-medium text-gray-700">能干嘛：</span>在Meta眼镜上用AI，问"我在看什么"</p>
@@ -390,7 +395,7 @@
               <p><span class="font-medium text-gray-700">How:</span>Requires iPhone + Meta glasses</p>
             </div>
             <div class="mt-3 pt-3 border-t border-gray-100">
-              <p class="text-xs text-gray-400">⚠️ <span class="lang-zh">需要Meta眼镜($299)</span><span class="lang-en">Requires Meta glasses ($299)</span></p>
+              <p class="text-xs text-gray-400">⚠️ <span class="lang-zh-i">需要Meta眼镜($299)</span><span class="lang-en-i">Requires Meta glasses ($299)</span></p>
             </div>
           </article>
 
@@ -398,12 +403,12 @@
             <div class="flex items-start justify-between mb-2">
               <h3 class="font-bold text-gray-800 text-sm md:text-base">Skills Manager</h3>
               <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">
-                <span class="lang-zh">免费</span><span class="lang-en">Free</span>
+                <span class="lang-zh-i">免费</span><span class="lang-en-i">Free</span>
               </span>
             </div>
             <p class="text-xs md:text-sm text-purple-600 mb-3">
-              <span class="lang-zh">管理AI编程技能配置</span>
-              <span class="lang-en">Manage AI Coding Skills</span>
+              <span class="lang-zh-i">管理AI编程技能配置</span>
+              <span class="lang-en-i">Manage AI Coding Skills</span>
             </p>
             <div class="lang-zh space-y-2 text-xs md:text-sm text-gray-600">
               <p><span class="font-medium text-gray-700">能干嘛：</span>统一管理Claude Code、Codex等配置</p>
@@ -414,7 +419,7 @@
               <p><span class="font-medium text-gray-700">How:</span>Download installer</p>
             </div>
             <div class="mt-3 pt-3 border-t border-gray-100">
-              <p class="text-xs text-gray-400">⚠️ <span class="lang-zh">面向开发者</span><span class="lang-en">For developers</span></p>
+              <p class="text-xs text-gray-400">⚠️ <span class="lang-zh-i">面向开发者</span><span class="lang-en-i">For developers</span></p>
             </div>
           </article>
 
@@ -422,12 +427,12 @@
             <div class="flex items-start justify-between mb-2">
               <h3 class="font-bold text-gray-800 text-sm md:text-base">Clawlet</h3>
               <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">
-                <span class="lang-zh">免费</span><span class="lang-en">Free</span>
+                <span class="lang-zh-i">免费</span><span class="lang-en-i">Free</span>
               </span>
             </div>
             <p class="text-xs md:text-sm text-purple-600 mb-3">
-              <span class="lang-zh">超轻量命令行AI助手</span>
-              <span class="lang-en">Ultra-Lightweight CLI AI Assistant</span>
+              <span class="lang-zh-i">超轻量命令行AI助手</span>
+              <span class="lang-en-i">Ultra-Lightweight CLI AI Assistant</span>
             </p>
             <div class="lang-zh space-y-2 text-xs md:text-sm text-gray-600">
               <p><span class="font-medium text-gray-700">能干嘛：</span>超小的AI助手程序，启动快</p>
@@ -438,7 +443,7 @@
               <p><span class="font-medium text-gray-700">How:</span>Download → configure → CLI chat</p>
             </div>
             <div class="mt-3 pt-3 border-t border-gray-100">
-              <p class="text-xs text-gray-400">⚠️ <span class="lang-zh">纯命令行</span><span class="lang-en">Command-line only</span></p>
+              <p class="text-xs text-gray-400">⚠️ <span class="lang-zh-i">纯命令行</span><span class="lang-en-i">Command-line only</span></p>
             </div>
           </article>
         </div>
@@ -468,7 +473,7 @@
                   <p class="text-xs md:text-sm text-gray-600 mb-2"><span class="font-medium text-gray-700">🎯</span> By next year, WhatsApp/Telegram might have built-in AI assistants.</p>
                 </div>
                 <div class="text-xs text-gray-400">
-                  <span class="lang-zh">置信度</span><span class="lang-en">Confidence</span>：⭐⭐⭐⭐⭐
+                  <span class="lang-zh-i">置信度</span><span class="lang-en-i">Confidence</span>：⭐⭐⭐⭐⭐
                 </div>
               </div>
             </div>
@@ -491,7 +496,7 @@
                   <p class="text-xs md:text-sm text-gray-600 mb-2"><span class="font-medium text-gray-700">🎯</span> Non-native speakers will see better voice AI experiences.</p>
                 </div>
                 <div class="text-xs text-gray-400">
-                  <span class="lang-zh">置信度</span><span class="lang-en">Confidence</span>：⭐⭐⭐⭐
+                  <span class="lang-zh-i">置信度</span><span class="lang-en-i">Confidence</span>：⭐⭐⭐⭐
                 </div>
               </div>
             </div>
@@ -514,7 +519,7 @@
                   <p class="text-xs md:text-sm text-gray-600 mb-2"><span class="font-medium text-gray-700">🎯</span> Free training data will become scarcer, might affect quality or push up prices.</p>
                 </div>
                 <div class="text-xs text-gray-400">
-                  <span class="lang-zh">置信度</span><span class="lang-en">Confidence</span>：⭐⭐⭐⭐
+                  <span class="lang-zh-i">置信度</span><span class="lang-en-i">Confidence</span>：⭐⭐⭐⭐
                 </div>
               </div>
             </div>
